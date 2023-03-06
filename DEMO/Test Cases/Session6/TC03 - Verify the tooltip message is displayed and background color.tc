@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC03 - Verify the tooltip message is displayed and background color</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a21cd2a1-a3cc-4910-aa6d-fd3c42af3d65</testCaseGuid>
+</TestCaseEntity>

@@ -11,21 +11,42 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
+import common.Color
 import internal.GlobalVariable as GlobalVariable
 
+
+'1. Navigate to url: https://atlassian.design/components/tooltip/examples'
 WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-WebUI.navigateToUrl('https://the-internet.herokuapp.com/login')
+WebUI.navigateToUrl('https://atlassian.design/components/tooltip/examples')
 
-WebUI.setText(findTestObject('Login_TC02/txt_username'), 'tomsmith')
+'2. Hovering to button'
 
-WebUI.setText(findTestObject('Login_TC02/txt_password'), 'SuperSecretPassword!')
+WebUI.mouseOver(findTestObject('Object Repository/Session6/Bai3/btn_hover'))
 
-WebUI.click(findTestObject('Login_TC02/btn_Login'))
+'3. Verify the tooltip"s message is displayed'
 
-WebUI.verifyTextPresent('Welcome to the Secure Area. When you are done click logout below', false)
+WebUI.verifyElementVisible(findTestObject('Object Repository/Session6/Bai3/text_tooltips'), FailureHandling.STOP_ON_FAILURE)
+
+'4. Get background of button when hovering'
+
+String backgroundColor = WebUI.getCSSValue(findTestObject('Object Repository/Session6/Bai3/btn_hover'), 'background')
+println backgroundColor
+
+//Convert baclground color
+String newbackgroundColor = Color.convertRGBAToHex(backgroundColor)
+println newbackgroundColor
+
+'5. Verify background after hover is displayed correctly'
+
+WebUI.verifyEqual(newbackgroundColor, '#0065ff')
+
+WebUI.delay(5)
+
+//close browser
 
 WebUI.closeBrowser()
 
