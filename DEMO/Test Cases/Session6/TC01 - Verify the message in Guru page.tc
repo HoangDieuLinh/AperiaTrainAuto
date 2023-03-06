@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC01 - Verify Book Appointment title will be dispplayed</name>
+   <name>TC01 - Verify the message in Guru page</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>a305627f-bafd-413a-98c4-0117fce9c3b7</testCaseGuid>
+   <testCaseGuid>7c421638-3234-4379-a96e-fbc4effeac62</testCaseGuid>
 </TestCaseEntity>

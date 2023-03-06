@@ -19,11 +19,11 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/profile.php#login')
 
-WebUI.setText(findTestObject('Login_TC01/txt_username'), 'John Doe')
+WebUI.setText(findTestObject('Session5/Login_TC01/txt_username'), 'John Doe')
 
-WebUI.setText(findTestObject('Login_TC01/txt_password'), 'ThisIsNotAPassword')
+WebUI.setText(findTestObject('Session5/Login_TC01/txt_password'), 'ThisIsNotAPassword')
 
-WebUI.click(findTestObject('Login_TC01/btn_login'))
+WebUI.click(findTestObject('Session5/Login_TC01/btn_login'))
 
 WebUI.verifyTextPresent('Book Appointment', false)
 

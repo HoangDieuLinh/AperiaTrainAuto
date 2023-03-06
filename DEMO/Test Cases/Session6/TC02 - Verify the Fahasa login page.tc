@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02 - Verify the Fahasa login page</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>10212362-df93-4e11-8eb0-8231260f6158</testCaseGuid>
+</TestCaseEntity>
