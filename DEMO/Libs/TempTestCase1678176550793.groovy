@@ -14,7 +14,7 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.m
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\LINHHO~1\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Session6\\TC03 - Verify the tooltip message is displayed and background color\\20230306_162241\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\LINHHO~1\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Session6\\TC03 - Verify the tooltip message is displayed and background color\\20230307_150910\\execution.properties')
 
 TestCaseMain.beforeStart()
 
