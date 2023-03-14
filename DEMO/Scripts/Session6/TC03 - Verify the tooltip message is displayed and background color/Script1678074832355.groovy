@@ -1,6 +1,5 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import common.Color
@@ -20,7 +19,6 @@ WebUI.mouseOver(findTestObject('Object Repository/Session6/Bai3/btn_hover'))
 
 '3. Verify the tooltip"s message is displayed'
 
-//WebUI.verifyElementText(findTestObject('Object Repository/Session6/Bai3/text_tooltips'), 'Hello World')
 id = WebUI.getAttribute(findTestObject('Object Repository/Session6/Bai3/btn_hover'), 'aria-describedby')
 
 println id
